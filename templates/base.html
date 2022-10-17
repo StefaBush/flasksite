@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <title>{% block title%}{% endblock %}</title>
+    <title>Title</title>
+    <style>
+ body {
+ background: black;
+ }
+  form {
+  margin: -7px 0px;
+  }
+
+</style>
+</head>
+<body>
+<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+  <div class="container-fluid d-flex align-items-center">
+    <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+      <br><img src="/static/img/photo.png" width="30" height="30" class="me-3">
+      IT OVERONE
+    </h1>
+  </div>
+    <a href="/about" class="btn btn-outline-light">QAF</a>
+</header><br>
+<aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
+    <div class="row mx-auto">
+        <a class="btn d-inline-flex align-items-center collapsed border-0 text-white bg-primary col-1" href="/">Главная</a><br>
+    <a class="btn d-inline-flex align-items-center collapsed border-0 text-white bg-primary col-1" href="/posts">Статьи</a><br>
+    <a class="btn d-inline-flex align-items-center collapsed border-0 text-white bg-warning col-2" href="/create-article">Добавить статью</a><br>
+    <a class="btn d-inline-flex align-items-center collapsed border-0 text-white bg-primary col-1" href="/about">О нас</a><br>
+    </div>
+</aside>
+{% block body %}{% endblock %}
+
+<footer class="container bd-header bg-dark py-3 align-items-stretch pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/static/img/photo.png" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-white">© 2020–2022</small>
+      </div>
+      <div class="col-6 col-md text-white">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md text-white">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md text-white">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
